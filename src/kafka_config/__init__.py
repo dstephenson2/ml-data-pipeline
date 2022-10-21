@@ -1,17 +1,21 @@
 
 import os
 
-
+# Authentication related variables
 SECURITY_PROTOCOL="SASL_SSL"
 SSL_MACHENISM="PLAIN"
-API_KEY = os.getenv('API_KEY',None)
-ENDPOINT_SCHEMA_URL  = os.getenv('ENDPOINT_SCHEMA_URL',None)
-API_SECRET_KEY = os.getenv('API_SECRET_KEY',None)
-BOOTSTRAP_SERVER = os.getenv('BOOTSTRAP_SERVER',None)
-SECURITY_PROTOCOL = os.getenv('SECURITY_PROTOCOL',None)
-SSL_MACHENISM = os.getenv('SSL_MACHENISM',None)
-SCHEMA_REGISTRY_API_KEY = os.getenv('SCHEMA_REGISTRY_API_KEY',None)
-SCHEMA_REGISTRY_API_SECRET = os.getenv('SCHEMA_REGISTRY_API_SECRET',None)
+
+# Cloud API details
+API_KEY = "DSDXFTSX7MEBXLQH" # os.getenv('API_KEY',None)
+API_SECRET_KEY = "dFa8mp7Pjb+M5Ujt2SfQ0XV+aSBLuy7YsB6TXXJToAly50FSZeDsIzoWS+TYAonN" # os.getenv('API_SECRET_KEY',None)
+BOOTSTRAP_SERVER = "pkc-lzvrd.us-west4.gcp.confluent.cloud:9092" # os.getenv('BOOTSTRAP_SERVER',None)
+# SECURITY_PROTOCOL = os.getenv('SECURITY_PROTOCOL',None)
+# SSL_MACHENISM = os.getenv('SSL_MACHENISM',None)
+
+# Schema related variables
+ENDPOINT_SCHEMA_URL  = "https://psrc-znpo0.ap-southeast-2.aws.confluent.cloud" # os.getenv('ENDPOINT_SCHEMA_URL',None)
+SCHEMA_REGISTRY_API_KEY = "KPII7DYGVTI5B2FR" # os.getenv('SCHEMA_REGISTRY_API_KEY',None)
+SCHEMA_REGISTRY_API_SECRET = "9xi3TdZYfff/3rshhRyceCATXDXa9aTYJjevPJ6BaySRI2LX3cVYNQQTutgbCQx/" #os.getenv('SCHEMA_REGISTRY_API_SECRET',None)
 
 
 def sasl_conf():
